@@ -20,7 +20,6 @@ public class RequestCreateCheckingProduct{
     private ProductType type;
 
     @NotNull(message = "Valid from date cannot be null")
-    @FutureOrPresent(message = "Valid from date must be in the present or future")
     private LocalDateTime valid_from;
 
     @Future(message = "Valid to date must be in the future")
